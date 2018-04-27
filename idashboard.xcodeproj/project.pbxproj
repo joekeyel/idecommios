@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1B64EC0B844D541A8FBB24D7 /* Pods_idashboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C520AE468A87026D9E9D30FB /* Pods_idashboardTests.framework */; };
+		3073D8FD209306F600BDDA8E /* migratedpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073D8FC209306F600BDDA8E /* migratedpage.swift */; };
+		3073D8FF20930E0F00BDDA8E /* projectobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073D8FE20930E0F00BDDA8E /* projectobject.swift */; };
+		3073D9012093128700BDDA8E /* projecttypecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073D9002093128700BDDA8E /* projecttypecell.swift */; };
 		308952442090653500EFD9DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 308952432090653500EFD9DE /* GoogleService-Info.plist */; };
+		308952462090700900EFD9DE /* dashboardpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308952452090700900EFD9DE /* dashboardpage.swift */; };
 		3091E28F20901BCE00147F9F /* ragistrationctrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091E28E20901BCE00147F9F /* ragistrationctrl.swift */; };
 		309B346D208EBFB600B29C9E /* loginpagecontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B346C208EBFB600B29C9E /* loginpagecontroller.swift */; };
 		30CBA814208DBA740026D45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA813208DBA740026D45F /* AppDelegate.swift */; };
@@ -41,7 +45,11 @@
 
 /* Begin PBXFileReference section */
 		13C37136DBD46082E883BF6D /* Pods-idashboardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idashboardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-idashboardUITests/Pods-idashboardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3073D8FC209306F600BDDA8E /* migratedpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = migratedpage.swift; sourceTree = "<group>"; };
+		3073D8FE20930E0F00BDDA8E /* projectobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectobject.swift; sourceTree = "<group>"; };
+		3073D9002093128700BDDA8E /* projecttypecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projecttypecell.swift; sourceTree = "<group>"; };
 		308952432090653500EFD9DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		308952452090700900EFD9DE /* dashboardpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardpage.swift; sourceTree = "<group>"; };
 		3091E28E20901BCE00147F9F /* ragistrationctrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ragistrationctrl.swift; sourceTree = "<group>"; };
 		309B346C208EBFB600B29C9E /* loginpagecontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginpagecontroller.swift; sourceTree = "<group>"; };
 		30CBA810208DBA740026D45F /* idashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = idashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +137,10 @@
 				30CBA81F208DBA750026D45F /* Info.plist */,
 				309B346C208EBFB600B29C9E /* loginpagecontroller.swift */,
 				3091E28E20901BCE00147F9F /* ragistrationctrl.swift */,
+				308952452090700900EFD9DE /* dashboardpage.swift */,
+				3073D8FC209306F600BDDA8E /* migratedpage.swift */,
+				3073D8FE20930E0F00BDDA8E /* projectobject.swift */,
+				3073D9002093128700BDDA8E /* projecttypecell.swift */,
 			);
 			path = idashboard;
 			sourceTree = "<group>";
@@ -454,7 +466,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				309B346D208EBFB600B29C9E /* loginpagecontroller.swift in Sources */,
+				3073D9012093128700BDDA8E /* projecttypecell.swift in Sources */,
+				3073D8FF20930E0F00BDDA8E /* projectobject.swift in Sources */,
 				3091E28F20901BCE00147F9F /* ragistrationctrl.swift in Sources */,
+				308952462090700900EFD9DE /* dashboardpage.swift in Sources */,
+				3073D8FD209306F600BDDA8E /* migratedpage.swift in Sources */,
 				30CBA816208DBA740026D45F /* ViewController.swift in Sources */,
 				30CBA814208DBA740026D45F /* AppDelegate.swift in Sources */,
 			);

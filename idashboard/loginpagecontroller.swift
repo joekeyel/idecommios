@@ -22,7 +22,18 @@ class loginpagecontroller: UIViewController {
         
        FIRAuth.auth()?.addStateDidChangeListener { (auth, user) in
         
-        print(user?.email!)
+        
+        if(user != nil){
+            
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let initialViewController2 = storyboard.instantiateViewController(withIdentifier: "dashboard") as! dashboardpage
+            
+            self.navigationController?.pushViewController(initialViewController2, animated: true)
+            
+            
+        }
         }
       
       
@@ -52,7 +63,17 @@ class loginpagecontroller: UIViewController {
         
         FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
            
-            
+            if(user != nil){
+                
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                let initialViewController2 = storyboard.instantiateViewController(withIdentifier: "dashboard") as! dashboardpage
+                
+                self.navigationController?.pushViewController(initialViewController2, animated: true)
+                
+                
+            }
         }
 
         
