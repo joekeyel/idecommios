@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1B64EC0B844D541A8FBB24D7 /* Pods_idashboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C520AE468A87026D9E9D30FB /* Pods_idashboardTests.framework */; };
+		302E3B662095CF54004B3FD7 /* subbbalancecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E3B652095CF54004B3FD7 /* subbbalancecell.swift */; };
+		302E3B682095CF7E004B3FD7 /* subbbalancecontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E3B672095CF7E004B3FD7 /* subbbalancecontroller.swift */; };
+		302E3B6A2095CFA9004B3FD7 /* subbbalanceobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E3B692095CFA9004B3FD7 /* subbbalanceobject.swift */; };
 		3073D8FD209306F600BDDA8E /* migratedpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073D8FC209306F600BDDA8E /* migratedpage.swift */; };
 		3073D8FF20930E0F00BDDA8E /* projectobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073D8FE20930E0F00BDDA8E /* projectobject.swift */; };
 		3073D9012093128700BDDA8E /* projecttypecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073D9002093128700BDDA8E /* projecttypecell.swift */; };
+		30864DA220941A1500CB8EEC /* subbplancontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30864DA120941A1500CB8EEC /* subbplancontroller.swift */; };
+		30864DA4209428F200CB8EEC /* subbplancell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30864DA3209428F200CB8EEC /* subbplancell.swift */; };
+		30864DA620942A6B00CB8EEC /* subbplanobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30864DA520942A6B00CB8EEC /* subbplanobject.swift */; };
 		308952442090653500EFD9DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 308952432090653500EFD9DE /* GoogleService-Info.plist */; };
 		308952462090700900EFD9DE /* dashboardpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308952452090700900EFD9DE /* dashboardpage.swift */; };
 		3091E28F20901BCE00147F9F /* ragistrationctrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091E28E20901BCE00147F9F /* ragistrationctrl.swift */; };
 		309B346D208EBFB600B29C9E /* loginpagecontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B346C208EBFB600B29C9E /* loginpagecontroller.swift */; };
+		30BD23812095492D00BB74D4 /* subbactualcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD23802095492D00BB74D4 /* subbactualcontroller.swift */; };
+		30BD238320954B2A00BB74D4 /* subbactualobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD238220954B2A00BB74D4 /* subbactualobject.swift */; };
+		30BD238520954B9500BB74D4 /* subbactualcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD238420954B9500BB74D4 /* subbactualcell.swift */; };
 		30CBA814208DBA740026D45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA813208DBA740026D45F /* AppDelegate.swift */; };
 		30CBA816208DBA740026D45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA815208DBA740026D45F /* ViewController.swift */; };
 		30CBA819208DBA740026D45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CBA817208DBA740026D45F /* Main.storyboard */; };
@@ -45,13 +54,22 @@
 
 /* Begin PBXFileReference section */
 		13C37136DBD46082E883BF6D /* Pods-idashboardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idashboardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-idashboardUITests/Pods-idashboardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		302E3B652095CF54004B3FD7 /* subbbalancecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbbalancecell.swift; sourceTree = "<group>"; };
+		302E3B672095CF7E004B3FD7 /* subbbalancecontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbbalancecontroller.swift; sourceTree = "<group>"; };
+		302E3B692095CFA9004B3FD7 /* subbbalanceobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbbalanceobject.swift; sourceTree = "<group>"; };
 		3073D8FC209306F600BDDA8E /* migratedpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = migratedpage.swift; sourceTree = "<group>"; };
 		3073D8FE20930E0F00BDDA8E /* projectobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectobject.swift; sourceTree = "<group>"; };
 		3073D9002093128700BDDA8E /* projecttypecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projecttypecell.swift; sourceTree = "<group>"; };
+		30864DA120941A1500CB8EEC /* subbplancontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbplancontroller.swift; sourceTree = "<group>"; };
+		30864DA3209428F200CB8EEC /* subbplancell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbplancell.swift; sourceTree = "<group>"; };
+		30864DA520942A6B00CB8EEC /* subbplanobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbplanobject.swift; sourceTree = "<group>"; };
 		308952432090653500EFD9DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		308952452090700900EFD9DE /* dashboardpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardpage.swift; sourceTree = "<group>"; };
 		3091E28E20901BCE00147F9F /* ragistrationctrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ragistrationctrl.swift; sourceTree = "<group>"; };
 		309B346C208EBFB600B29C9E /* loginpagecontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginpagecontroller.swift; sourceTree = "<group>"; };
+		30BD23802095492D00BB74D4 /* subbactualcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbactualcontroller.swift; sourceTree = "<group>"; };
+		30BD238220954B2A00BB74D4 /* subbactualobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbactualobject.swift; sourceTree = "<group>"; };
+		30BD238420954B9500BB74D4 /* subbactualcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbactualcell.swift; sourceTree = "<group>"; };
 		30CBA810208DBA740026D45F /* idashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = idashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CBA813208DBA740026D45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30CBA815208DBA740026D45F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +159,15 @@
 				3073D8FC209306F600BDDA8E /* migratedpage.swift */,
 				3073D8FE20930E0F00BDDA8E /* projectobject.swift */,
 				3073D9002093128700BDDA8E /* projecttypecell.swift */,
+				30864DA120941A1500CB8EEC /* subbplancontroller.swift */,
+				30864DA3209428F200CB8EEC /* subbplancell.swift */,
+				30864DA520942A6B00CB8EEC /* subbplanobject.swift */,
+				30BD23802095492D00BB74D4 /* subbactualcontroller.swift */,
+				30BD238220954B2A00BB74D4 /* subbactualobject.swift */,
+				30BD238420954B9500BB74D4 /* subbactualcell.swift */,
+				302E3B652095CF54004B3FD7 /* subbbalancecell.swift */,
+				302E3B672095CF7E004B3FD7 /* subbbalancecontroller.swift */,
+				302E3B692095CFA9004B3FD7 /* subbbalanceobject.swift */,
 			);
 			path = idashboard;
 			sourceTree = "<group>";
@@ -466,12 +493,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				309B346D208EBFB600B29C9E /* loginpagecontroller.swift in Sources */,
+				302E3B6A2095CFA9004B3FD7 /* subbbalanceobject.swift in Sources */,
 				3073D9012093128700BDDA8E /* projecttypecell.swift in Sources */,
 				3073D8FF20930E0F00BDDA8E /* projectobject.swift in Sources */,
+				30864DA620942A6B00CB8EEC /* subbplanobject.swift in Sources */,
 				3091E28F20901BCE00147F9F /* ragistrationctrl.swift in Sources */,
 				308952462090700900EFD9DE /* dashboardpage.swift in Sources */,
+				30864DA220941A1500CB8EEC /* subbplancontroller.swift in Sources */,
+				30BD23812095492D00BB74D4 /* subbactualcontroller.swift in Sources */,
+				302E3B662095CF54004B3FD7 /* subbbalancecell.swift in Sources */,
 				3073D8FD209306F600BDDA8E /* migratedpage.swift in Sources */,
+				30BD238520954B9500BB74D4 /* subbactualcell.swift in Sources */,
+				30BD238320954B2A00BB74D4 /* subbactualobject.swift in Sources */,
+				302E3B682095CF7E004B3FD7 /* subbbalancecontroller.swift in Sources */,
 				30CBA816208DBA740026D45F /* ViewController.swift in Sources */,
+				30864DA4209428F200CB8EEC /* subbplancell.swift in Sources */,
 				30CBA814208DBA740026D45F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
