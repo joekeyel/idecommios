@@ -10,6 +10,7 @@ import UIKit
 
 class dashboardpage: UIViewController {
     
+    @IBOutlet weak var currentdate: UIButton!
     
     @IBOutlet weak var colobalance: UIButton!
     @IBOutlet weak var fiberbalance: UIButton!
@@ -38,6 +39,18 @@ class dashboardpage: UIViewController {
         fetch5()
         fetch6()
         fetch7()
+        
+       
+          let date = Date()
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+         formatter.locale = Locale(identifier: "en_US")
+        
+        let result = formatter.string(from: date)
+        currentdate.setTitle(result, for: .normal)
+       self.title = "REALTIME IPMSAN DASHBOARD"
       
     }
 
@@ -501,4 +514,30 @@ class dashboardpage: UIViewController {
         
         task.resume()
     }
+    
+    
+    @IBAction func reloadbutton(_ sender: Any) {
+        
+        fetch1()
+        fetch2()
+        fetch3()
+        fetch4()
+        fetch5()
+        fetch6()
+        fetch7()
+        
+        
+        
+        let date = Date()
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        formatter.locale = Locale(identifier: "en_US")
+        
+        let result = formatter.string(from: date)
+        currentdate.setTitle(result, for: .normal)
+        self.title = "REALTIME IPMSAN DASHBOARD"
+    }
+    
 }

@@ -1,24 +1,24 @@
 //
-//  subbbalancecell.swift
+//  fiberplancell.swift
 //  idashboard
 //
-//  Created by Hasanul Isyraf on 29/04/2018.
+//  Created by Hasanul Isyraf on 30/04/2018.
 //  Copyright © 2018 Hasanul Isyraf. All rights reserved.
 //
 
 import UIKit
 
-class subbbalancecell: UITableViewCell {
+class fiberplancell: UITableViewCell {
+
+   
+    @IBOutlet weak var oldcabinet: UILabel!
     
-    @IBOutlet weak var cabname: UILabel!
+    @IBOutlet weak var newcabinet: UILabel!
     
-    
-    @IBOutlet weak var port: UILabel!
-    @IBOutlet weak var phase: UILabel!
     @IBOutlet weak var region: UILabel!
     
+    @IBOutlet weak var port: UILabel!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
