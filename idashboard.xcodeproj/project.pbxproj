@@ -11,6 +11,21 @@
 		302E3B662095CF54004B3FD7 /* subbbalancecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E3B652095CF54004B3FD7 /* subbbalancecell.swift */; };
 		302E3B682095CF7E004B3FD7 /* subbbalancecontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E3B672095CF7E004B3FD7 /* subbbalancecontroller.swift */; };
 		302E3B6A2095CFA9004B3FD7 /* subbbalanceobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E3B692095CFA9004B3FD7 /* subbbalanceobject.swift */; };
+		305E1E092097F0D0005F90C9 /* fiberactualcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E082097F0D0005F90C9 /* fiberactualcontroller.swift */; };
+		305E1E0B2097F105005F90C9 /* fiberactualcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E0A2097F105005F90C9 /* fiberactualcell.swift */; };
+		305E1E0D2097F12A005F90C9 /* fiberactualobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E0C2097F12A005F90C9 /* fiberactualobject.swift */; };
+		305E1E0F2097FF2B005F90C9 /* fiberbalanceobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E0E2097FF2B005F90C9 /* fiberbalanceobject.swift */; };
+		305E1E112097FF44005F90C9 /* fiberbalancecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E102097FF44005F90C9 /* fiberbalancecell.swift */; };
+		305E1E132097FF64005F90C9 /* fiberbalancecontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E122097FF64005F90C9 /* fiberbalancecontroller.swift */; };
+		305E1E1520980B30005F90C9 /* coloplancontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E1420980B30005F90C9 /* coloplancontroller.swift */; };
+		305E1E1720980B4B005F90C9 /* coloplancell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E1620980B4B005F90C9 /* coloplancell.swift */; };
+		305E1E1920980B69005F90C9 /* coloplanobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E1820980B69005F90C9 /* coloplanobject.swift */; };
+		305E1E1B209828A0005F90C9 /* coloactualobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E1A209828A0005F90C9 /* coloactualobject.swift */; };
+		305E1E1D209828DB005F90C9 /* coloactualcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E1C209828DB005F90C9 /* coloactualcontroller.swift */; };
+		305E1E1F20982902005F90C9 /* coloactualcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E1E20982902005F90C9 /* coloactualcell.swift */; };
+		305E1E2120982DC0005F90C9 /* colobalancecontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E2020982DC0005F90C9 /* colobalancecontroller.swift */; };
+		305E1E2320982E87005F90C9 /* colobalancecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E2220982E87005F90C9 /* colobalancecell.swift */; };
+		305E1E2520982EA7005F90C9 /* colobalanceobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E1E2420982EA7005F90C9 /* colobalanceobject.swift */; };
 		3073D8FD209306F600BDDA8E /* migratedpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073D8FC209306F600BDDA8E /* migratedpage.swift */; };
 		3073D8FF20930E0F00BDDA8E /* projectobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073D8FE20930E0F00BDDA8E /* projectobject.swift */; };
 		3073D9012093128700BDDA8E /* projecttypecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073D9002093128700BDDA8E /* projecttypecell.swift */; };
@@ -60,6 +75,21 @@
 		302E3B652095CF54004B3FD7 /* subbbalancecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbbalancecell.swift; sourceTree = "<group>"; };
 		302E3B672095CF7E004B3FD7 /* subbbalancecontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbbalancecontroller.swift; sourceTree = "<group>"; };
 		302E3B692095CFA9004B3FD7 /* subbbalanceobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbbalanceobject.swift; sourceTree = "<group>"; };
+		305E1E082097F0D0005F90C9 /* fiberactualcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiberactualcontroller.swift; sourceTree = "<group>"; };
+		305E1E0A2097F105005F90C9 /* fiberactualcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiberactualcell.swift; sourceTree = "<group>"; };
+		305E1E0C2097F12A005F90C9 /* fiberactualobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiberactualobject.swift; sourceTree = "<group>"; };
+		305E1E0E2097FF2B005F90C9 /* fiberbalanceobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiberbalanceobject.swift; sourceTree = "<group>"; };
+		305E1E102097FF44005F90C9 /* fiberbalancecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiberbalancecell.swift; sourceTree = "<group>"; };
+		305E1E122097FF64005F90C9 /* fiberbalancecontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiberbalancecontroller.swift; sourceTree = "<group>"; };
+		305E1E1420980B30005F90C9 /* coloplancontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coloplancontroller.swift; sourceTree = "<group>"; };
+		305E1E1620980B4B005F90C9 /* coloplancell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coloplancell.swift; sourceTree = "<group>"; };
+		305E1E1820980B69005F90C9 /* coloplanobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coloplanobject.swift; sourceTree = "<group>"; };
+		305E1E1A209828A0005F90C9 /* coloactualobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coloactualobject.swift; sourceTree = "<group>"; };
+		305E1E1C209828DB005F90C9 /* coloactualcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coloactualcontroller.swift; sourceTree = "<group>"; };
+		305E1E1E20982902005F90C9 /* coloactualcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coloactualcell.swift; sourceTree = "<group>"; };
+		305E1E2020982DC0005F90C9 /* colobalancecontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colobalancecontroller.swift; sourceTree = "<group>"; };
+		305E1E2220982E87005F90C9 /* colobalancecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colobalancecell.swift; sourceTree = "<group>"; };
+		305E1E2420982EA7005F90C9 /* colobalanceobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colobalanceobject.swift; sourceTree = "<group>"; };
 		3073D8FC209306F600BDDA8E /* migratedpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = migratedpage.swift; sourceTree = "<group>"; };
 		3073D8FE20930E0F00BDDA8E /* projectobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectobject.swift; sourceTree = "<group>"; };
 		3073D9002093128700BDDA8E /* projecttypecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projecttypecell.swift; sourceTree = "<group>"; };
@@ -177,6 +207,21 @@
 				30B744732096C6BC0045EC99 /* fiberplancontroller.swift */,
 				30B744752096C7220045EC99 /* fiberplancell.swift */,
 				30B744772096C7C30045EC99 /* fiberplanobject.swift */,
+				305E1E082097F0D0005F90C9 /* fiberactualcontroller.swift */,
+				305E1E0A2097F105005F90C9 /* fiberactualcell.swift */,
+				305E1E0C2097F12A005F90C9 /* fiberactualobject.swift */,
+				305E1E0E2097FF2B005F90C9 /* fiberbalanceobject.swift */,
+				305E1E102097FF44005F90C9 /* fiberbalancecell.swift */,
+				305E1E122097FF64005F90C9 /* fiberbalancecontroller.swift */,
+				305E1E1420980B30005F90C9 /* coloplancontroller.swift */,
+				305E1E1620980B4B005F90C9 /* coloplancell.swift */,
+				305E1E1820980B69005F90C9 /* coloplanobject.swift */,
+				305E1E1A209828A0005F90C9 /* coloactualobject.swift */,
+				305E1E1C209828DB005F90C9 /* coloactualcontroller.swift */,
+				305E1E1E20982902005F90C9 /* coloactualcell.swift */,
+				305E1E2020982DC0005F90C9 /* colobalancecontroller.swift */,
+				305E1E2220982E87005F90C9 /* colobalancecell.swift */,
+				305E1E2420982EA7005F90C9 /* colobalanceobject.swift */,
 			);
 			path = idashboard;
 			sourceTree = "<group>";
@@ -501,24 +546,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305E1E0B2097F105005F90C9 /* fiberactualcell.swift in Sources */,
+				305E1E1720980B4B005F90C9 /* coloplancell.swift in Sources */,
+				305E1E1D209828DB005F90C9 /* coloactualcontroller.swift in Sources */,
 				30B744762096C7220045EC99 /* fiberplancell.swift in Sources */,
 				309B346D208EBFB600B29C9E /* loginpagecontroller.swift in Sources */,
 				302E3B6A2095CFA9004B3FD7 /* subbbalanceobject.swift in Sources */,
 				3073D9012093128700BDDA8E /* projecttypecell.swift in Sources */,
 				3073D8FF20930E0F00BDDA8E /* projectobject.swift in Sources */,
 				30864DA620942A6B00CB8EEC /* subbplanobject.swift in Sources */,
+				305E1E132097FF64005F90C9 /* fiberbalancecontroller.swift in Sources */,
 				3091E28F20901BCE00147F9F /* ragistrationctrl.swift in Sources */,
 				308952462090700900EFD9DE /* dashboardpage.swift in Sources */,
 				30864DA220941A1500CB8EEC /* subbplancontroller.swift in Sources */,
 				30BD23812095492D00BB74D4 /* subbactualcontroller.swift in Sources */,
+				305E1E112097FF44005F90C9 /* fiberbalancecell.swift in Sources */,
 				30B744782096C7C30045EC99 /* fiberplanobject.swift in Sources */,
 				302E3B662095CF54004B3FD7 /* subbbalancecell.swift in Sources */,
+				305E1E1520980B30005F90C9 /* coloplancontroller.swift in Sources */,
 				3073D8FD209306F600BDDA8E /* migratedpage.swift in Sources */,
 				30B744742096C6BC0045EC99 /* fiberplancontroller.swift in Sources */,
 				30BD238520954B9500BB74D4 /* subbactualcell.swift in Sources */,
+				305E1E1920980B69005F90C9 /* coloplanobject.swift in Sources */,
+				305E1E1F20982902005F90C9 /* coloactualcell.swift in Sources */,
+				305E1E0F2097FF2B005F90C9 /* fiberbalanceobject.swift in Sources */,
+				305E1E0D2097F12A005F90C9 /* fiberactualobject.swift in Sources */,
+				305E1E2320982E87005F90C9 /* colobalancecell.swift in Sources */,
 				30BD238320954B2A00BB74D4 /* subbactualobject.swift in Sources */,
 				302E3B682095CF7E004B3FD7 /* subbbalancecontroller.swift in Sources */,
+				305E1E2120982DC0005F90C9 /* colobalancecontroller.swift in Sources */,
+				305E1E092097F0D0005F90C9 /* fiberactualcontroller.swift in Sources */,
+				305E1E2520982EA7005F90C9 /* colobalanceobject.swift in Sources */,
 				30CBA816208DBA740026D45F /* ViewController.swift in Sources */,
+				305E1E1B209828A0005F90C9 /* coloactualobject.swift in Sources */,
 				30864DA4209428F200CB8EEC /* subbplancell.swift in Sources */,
 				30CBA814208DBA740026D45F /* AppDelegate.swift in Sources */,
 			);
