@@ -15,7 +15,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="idashboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="startpage" id="BYZ-38-t0r" customClass="ViewController" customModule="idashboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,41 +125,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="startpage" translatesAutoresizingMaskIntoConstraints="NO" id="YwQ-ar-San">
-                                <rect key="frame" x="64" y="101" width="247" height="76"/>
+                                <rect key="frame" x="64" y="145" width="247" height="59"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i-DASHBOARD LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS7-Rw-yUE">
-                                <rect key="frame" x="16" y="245" width="343" height="23"/>
+                                <rect key="frame" x="16" y="272" width="343" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f4u-Ou-edK">
-                                <rect key="frame" x="54" y="291" width="266" height="84"/>
+                                <rect key="frame" x="54" y="318" width="266" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qD7-Cm-hV7">
-                                <rect key="frame" x="54" y="398" width="266" height="30"/>
+                                <rect key="frame" x="54" y="371" width="266" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUM-FI-lAO">
-                                <rect key="frame" x="54" y="563" width="266" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qh-FQ-6f5">
-                                <rect key="frame" x="54" y="517" width="266" height="30"/>
+                                <rect key="frame" x="54" y="490" width="266" height="30"/>
                                 <state key="normal" title="Not register yet? Signup Here"/>
                                 <connections>
                                     <segue destination="lpb-7W-LTa" kind="show" id="W6r-da-LS2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggk-Dh-8hr">
-                                <rect key="frame" x="54" y="463" width="266" height="30"/>
+                                <rect key="frame" x="54" y="436" width="266" height="30"/>
                                 <color key="backgroundColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="LOGIN">
@@ -169,21 +163,26 @@
                                     <action selector="loginaction:" destination="sA3-tW-nU1" eventType="touchUpInside" id="OZu-rs-CrU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSj-uM-Zhc">
+                                <rect key="frame" x="54" y="528" width="266" height="30"/>
+                                <state key="normal" title="Forgot Password? Click here"/>
+                                <connections>
+                                    <action selector="resetpasswordaction:" destination="sA3-tW-nU1" eventType="touchUpInside" id="09P-wo-K6T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4qh-FQ-6f5" firstAttribute="leading" secondItem="kUM-FI-lAO" secondAttribute="leading" id="1bc-xT-Uwt"/>
-                            <constraint firstItem="4qh-FQ-6f5" firstAttribute="trailing" secondItem="kUM-FI-lAO" secondAttribute="trailing" id="2au-ZH-EYz"/>
                             <constraint firstItem="mS7-Rw-yUE" firstAttribute="top" secondItem="YwQ-ar-San" secondAttribute="bottom" constant="68" id="7ES-J2-TYO"/>
                             <constraint firstItem="qD7-Cm-hV7" firstAttribute="leading" secondItem="Ggk-Dh-8hr" secondAttribute="leading" id="9OS-yf-3Qt"/>
                             <constraint firstItem="Ggk-Dh-8hr" firstAttribute="top" secondItem="qD7-Cm-hV7" secondAttribute="bottom" constant="35" id="BTb-OC-Ck6"/>
-                            <constraint firstItem="kUM-FI-lAO" firstAttribute="top" secondItem="4qh-FQ-6f5" secondAttribute="bottom" constant="16" id="CKQ-Oq-3eE"/>
                             <constraint firstItem="4qh-FQ-6f5" firstAttribute="top" secondItem="Ggk-Dh-8hr" secondAttribute="bottom" constant="24" id="Ci4-kA-lhd"/>
                             <constraint firstItem="Ggk-Dh-8hr" firstAttribute="trailing" secondItem="4qh-FQ-6f5" secondAttribute="trailing" id="DA0-73-REk"/>
                             <constraint firstItem="Ggk-Dh-8hr" firstAttribute="leading" secondItem="4qh-FQ-6f5" secondAttribute="leading" id="FjL-U2-M7L"/>
                             <constraint firstItem="Mhj-oq-Y7q" firstAttribute="trailing" secondItem="mS7-Rw-yUE" secondAttribute="trailing" constant="16" id="IZZ-wR-o1E"/>
                             <constraint firstItem="Mhj-oq-Y7q" firstAttribute="trailing" secondItem="YwQ-ar-San" secondAttribute="trailing" constant="64" id="LfT-cP-BNc"/>
                             <constraint firstItem="f4u-Ou-edK" firstAttribute="top" secondItem="mS7-Rw-yUE" secondAttribute="bottom" constant="23" id="NHI-f4-IwC"/>
+                            <constraint firstItem="eSj-uM-Zhc" firstAttribute="top" secondItem="4qh-FQ-6f5" secondAttribute="bottom" constant="8" symbolic="YES" id="QH1-3W-isz"/>
                             <constraint firstItem="f4u-Ou-edK" firstAttribute="trailing" secondItem="YwQ-ar-San" secondAttribute="trailing" constant="9" id="UJJ-VZ-1Dk"/>
                             <constraint firstItem="YwQ-ar-San" firstAttribute="top" secondItem="Mhj-oq-Y7q" secondAttribute="top" constant="81" id="WNe-t4-6Dn"/>
                             <constraint firstItem="f4u-Ou-edK" firstAttribute="trailing" secondItem="qD7-Cm-hV7" secondAttribute="trailing" id="Yc5-p0-GbH"/>
@@ -191,8 +190,10 @@
                             <constraint firstItem="f4u-Ou-edK" firstAttribute="centerY" secondItem="Bd1-Kz-Vax" secondAttribute="centerY" id="gHP-nR-mAo"/>
                             <constraint firstItem="mS7-Rw-yUE" firstAttribute="leading" secondItem="Mhj-oq-Y7q" secondAttribute="leading" constant="16" id="hC0-pP-biq"/>
                             <constraint firstItem="qD7-Cm-hV7" firstAttribute="top" secondItem="f4u-Ou-edK" secondAttribute="bottom" constant="23" id="kqa-Ax-Ns4"/>
+                            <constraint firstItem="eSj-uM-Zhc" firstAttribute="leading" secondItem="4qh-FQ-6f5" secondAttribute="leading" id="lFA-yR-Bpn"/>
                             <constraint firstItem="qD7-Cm-hV7" firstAttribute="trailing" secondItem="Ggk-Dh-8hr" secondAttribute="trailing" id="qDi-vq-aTp"/>
                             <constraint firstItem="f4u-Ou-edK" firstAttribute="leading" secondItem="qD7-Cm-hV7" secondAttribute="leading" id="uHz-DA-9Zo"/>
+                            <constraint firstItem="eSj-uM-Zhc" firstAttribute="trailing" secondItem="4qh-FQ-6f5" secondAttribute="trailing" id="uiA-uW-4QH"/>
                             <constraint firstItem="YwQ-ar-San" firstAttribute="leading" secondItem="Mhj-oq-Y7q" secondAttribute="leading" constant="64" id="yVZ-ef-XzW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mhj-oq-Y7q"/>
@@ -267,7 +268,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startpage" translatesAutoresizingMaskIntoConstraints="NO" id="SU6-fh-6Hn">
-                                <rect key="frame" x="72" y="94" width="230" height="150"/>
+                                <rect key="frame" x="72" y="138" width="230" height="106"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2284,6 +2285,6 @@
         <image name="teammalysia" width="252" height="54"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="inh-Q5-F9g"/>
+        <segue reference="tiF-C3-mF1"/>
     </inferredMetricsTieBreakers>
 </document>

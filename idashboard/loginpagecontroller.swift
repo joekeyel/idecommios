@@ -80,12 +80,24 @@ class loginpagecontroller: UIViewController {
     }
     
     
-    func gotodashboardpage(){
+    @IBAction func resetpasswordaction(_ sender: Any) {
         
+        let emailtoreset = email.text
         
-        
-        
-        
+        if(emailtoreset?.isEmpty)!{
+            
+            showToast(message: "Pls key in your valid email account")
+            
+        }else{
+            FIRAuth.auth()?.sendPasswordReset(withEmail: emailtoreset!) { error in
+                
+                if(error == nil){
+                    self.showToast(message: "An email to reset your password has been sent")}else{
+                    self.showToast(message: error.debugDescription)
+                }
+        }
+        }
     }
+    
     
 }

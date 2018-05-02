@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class dashboardpage: UIViewController {
     
@@ -32,6 +33,17 @@ class dashboardpage: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //set bar button item
+        let btn1 = UIButton(type: .custom)
+        btn1.setImage(#imageLiteral(resourceName: "logout"), for: .normal)
+        btn1.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
+        btn1.addTarget(self, action: #selector(dashboardpage.logoutfirebase), for: .touchUpInside)
+        let item1 = UIBarButtonItem(customView: btn1)
+        
+   
+        
+        self.navigationItem.setRightBarButtonItems([item1], animated: true)
+        
         fetch1()
         fetch2()
         fetch3()
@@ -52,6 +64,15 @@ class dashboardpage: UIViewController {
         currentdate.setTitle(result, for: .normal)
        self.title = "REALTIME IPMSAN DASHBOARD"
       
+    }
+    
+    @objc func logoutfirebase(){
+        
+        try! FIRAuth.auth()!.signOut()
+        if let storyboard = self.storyboard {
+            let vc = storyboard.instantiateViewController(withIdentifier: "startpage") as! ViewController
+            self.present(vc, animated: false, completion: nil)
+        }
     }
 
     func fetch1(){
