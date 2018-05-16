@@ -12,5 +12,6 @@ class projectobject: NSObject {
     
     var projecttype: String?
     var total:String?
+    var states:String?
     
 }

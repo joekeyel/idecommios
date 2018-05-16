@@ -13,22 +13,19 @@ class dashboardpage: UIViewController {
     
     @IBOutlet weak var currentdate: UIButton!
     
-    @IBOutlet weak var colobalance: UIButton!
-    @IBOutlet weak var fiberbalance: UIButton!
-    @IBOutlet weak var subbbalance: UIButton!
-    @IBOutlet weak var actualcolo: UIButton!
-    @IBOutlet weak var plancolo: UIButton!
-    @IBOutlet weak var actualfiber: UIButton!
-    @IBOutlet weak var planfiber: UIButton!
-    @IBOutlet weak var actualsubb: UIButton!
-    @IBOutlet weak var plansubb: UIButton!
-    @IBOutlet weak var handedover: UIButton!
     
-    @IBOutlet weak var activetttoday: UIButton!
-    @IBOutlet weak var monitoringsites: UIButton!
-    @IBOutlet weak var todayplan: UIButton!
-    @IBOutlet weak var totaltttext: UIButton!
-    @IBOutlet weak var migratedtext: UIButton!
+    @IBOutlet weak var totalsite: UIButton!
+    
+    
+    @IBOutlet weak var completesite: UIButton!
+    
+    @IBOutlet weak var dismantling: UIButton!
+    @IBOutlet weak var scrollview1: UIScrollView!
+    
+    @IBOutlet weak var balance: UIButton!
+    @IBOutlet weak var lockin: UIButton!
+    @IBOutlet weak var remaining: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,13 +41,13 @@ class dashboardpage: UIViewController {
         
         self.navigationItem.setRightBarButtonItems([item1], animated: true)
         
-        fetch1()
-        fetch2()
-        fetch3()
-        fetch4()
-        fetch5()
-        fetch6()
-        fetch7()
+       fetch1()
+//        fetch2()
+//        fetch3()
+//        fetch4()
+//        fetch5()
+//        fetch6()
+//        fetch7()
         
        
           let date = Date()
@@ -63,22 +60,35 @@ class dashboardpage: UIViewController {
         let result = formatter.string(from: date)
         currentdate.setTitle(result, for: .normal)
        self.title = "REALTIME IPMSAN DASHBOARD"
+         self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "Arial", size: 12)!]
+        
+        
+        scrollview1.isDirectionalLockEnabled = true
+      
       
     }
     
     @objc func logoutfirebase(){
         
         try! FIRAuth.auth()!.signOut()
-        if let storyboard = self.storyboard {
-            let vc = storyboard.instantiateViewController(withIdentifier: "startpage") as! ViewController
-            self.present(vc, animated: false, completion: nil)
-        }
+    
+            
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let initialViewController2 = storyboard.instantiateViewController(withIdentifier: "startpage") as! ViewController
+            
+            self.navigationController?.pushViewController(initialViewController2, animated: true)
+            
+            
+        
+        
     }
 
     func fetch1(){
         
         
-        let urlrequest = URLRequest(url: URL(string:"http://58.27.84.166/mcconline/MCC%20Online%20V3/query_handover.php")!)
+        let urlrequest = URLRequest(url: URL(string:"http://58.27.84.166/mcconline/MCC%20Online%20V3/decom_pstn.php")!)
         
         let task = URLSession.shared.dataTask(with: urlrequest){(data,response,error)  in
             
@@ -90,17 +100,61 @@ class dashboardpage: UIViewController {
                     
                     
                     var value:String = ""
-                    if  let summaryfromjson  = json["handover"] as? String{
+                    if  let summaryfromjson  = json["totalsite"] as? String{
                         
                         print(summaryfromjson)
                         value = summaryfromjson
                         
                     }
                     
+                    var value2:String = ""
+                    if  let summaryfromjson2  = json["completesite"] as? String{
+                        
+                        print(summaryfromjson2)
+                        value2 = summaryfromjson2
+                        
+                    }
+                    
+                    var value3:String = ""
+                    if  let summaryfromjson3  = json["inprogresssite"] as? String{
+                        
+                        print(summaryfromjson3)
+                        value3 = summaryfromjson3
+                        
+                    }
+                    
+                    var value4:String = ""
+                    if  let summaryfromjson4  = json["pendingsite"] as? String{
+                        
+                        print(summaryfromjson4)
+                        value4 = summaryfromjson4
+                        
+                    }
+                    
+                    var value5:String = ""
+                    if  let summaryfromjson5  = json["payment"] as? String{
+                        
+                        print(summaryfromjson5)
+                        value5 = summaryfromjson5
+                        
+                    }
+                    
+                    var value6:String = ""
+                    if  let summaryfromjson6  = json["payreceive"] as? String{
+                        
+                        print(summaryfromjson6)
+                        value6 = summaryfromjson6
+                        
+                    }
                     
                     DispatchQueue.main.async {
                         
-                        self.handedover.setTitle(value, for: .normal)
+                        self.totalsite.setTitle(value, for: .normal)
+                        self.completesite.setTitle(value2, for: .normal)
+                         self.dismantling.setTitle(value3, for: .normal)
+                         self.remaining.setTitle(value4, for: .normal)
+                         self.lockin.setTitle(value5, for: .normal)
+                         self.balance.setTitle(value6, for: .normal)
                        
                     }
                     
@@ -150,7 +204,7 @@ class dashboardpage: UIViewController {
                     
                     DispatchQueue.main.async {
                         
-                        self.migratedtext.setTitle(value, for: .normal)
+                       // self.migratedtext.setTitle(value, for: .normal)
                         
                     }
                     
@@ -216,10 +270,10 @@ class dashboardpage: UIViewController {
                     
                     DispatchQueue.main.async {
                         
-                        self.totaltttext.setTitle(value, for: .normal)
-                        self.monitoringsites.setTitle(value2, for: .normal)
+                        //self.totaltttext.setTitle(value, for: .normal)
+                        //self.monitoringsites.setTitle(value2, for: .normal)
                         
-                        self.activetttoday.setTitle(value3, for: .normal)
+                        //self.activetttoday.setTitle(value3, for: .normal)
                     }
                     
                 }
@@ -309,12 +363,8 @@ class dashboardpage: UIViewController {
                     
                     DispatchQueue.main.async {
                         
-                        self.actualsubb.setTitle(actualsubb, for: .normal)
-                        self.plansubb.setTitle(plansubbvalue, for: .normal)
-                        self.planfiber.setTitle(planfibervalue, for: .normal)
-                        self.actualfiber.setTitle(actualfibervalue, for: .normal)
-                        self.actualcolo.setTitle(actualcolovalue, for: .normal)
-                        self.plancolo.setTitle(plancolovalue, for: .normal)
+                      
+                        //self.plancolo.setTitle(plancolovalue, for: .normal)
                         
                         
                     }
@@ -364,7 +414,7 @@ class dashboardpage: UIViewController {
                     
                     DispatchQueue.main.async {
                         
-                        self.subbbalance.setTitle(value, for: .normal)
+                       // self.subbbalance.setTitle(value, for: .normal)
                         
                     }
                     
@@ -414,7 +464,7 @@ class dashboardpage: UIViewController {
                     
                     DispatchQueue.main.async {
                         
-                        self.colobalance.setTitle(value, for: .normal)
+                       // self.colobalance.setTitle(value, for: .normal)
                         
                     }
                     
@@ -463,7 +513,7 @@ class dashboardpage: UIViewController {
                     
                     DispatchQueue.main.async {
                         
-                        self.fiberbalance.setTitle(value, for: .normal)
+                        //self.fiberbalance.setTitle(value, for: .normal)
                         
                     }
                     
@@ -485,6 +535,12 @@ class dashboardpage: UIViewController {
         }
         
         task.resume()
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if scrollView.contentOffset.x>0 {
+            scrollView.contentOffset.x = 0
+        }
     }
     
     func fetch8(){
@@ -512,7 +568,7 @@ class dashboardpage: UIViewController {
                     
                     DispatchQueue.main.async {
                         
-                        self.todayplan.setTitle(value, for: .normal)
+                        //self.todayplan.setTitle(value, for: .normal)
                         
                     }
                     
@@ -539,14 +595,14 @@ class dashboardpage: UIViewController {
     
     @IBAction func reloadbutton(_ sender: Any) {
         
-        fetch1()
-        fetch2()
-        fetch3()
-        fetch4()
-        fetch5()
-        fetch6()
-        fetch7()
-        
+//        fetch1()
+//        fetch2()
+//        fetch3()
+//        fetch4()
+//        fetch5()
+//        fetch6()
+//        fetch7()
+//
         
         
         let date = Date()
@@ -558,7 +614,59 @@ class dashboardpage: UIViewController {
         
         let result = formatter.string(from: date)
         currentdate.setTitle(result, for: .normal)
-        self.title = "REALTIME IPMSAN DASHBOARD"
+        self.title = "PSTN DECOMM 2018"
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "Arial", size: 12)!]
+        
     }
     
+    @IBAction func totalsiteaction(_ sender: Any) {
+        
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "totalsites") as! totalsites
+        
+        myVC.section = "listtotalstatesite"
+        myVC.statestr = "totalstate"
+    
+        
+        navigationController?.pushViewController(myVC, animated: true)
+    }
+    
+  
+    @IBAction func completesite(_ sender: Any) {
+        
+        
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "totalsites") as! totalsites
+        
+        myVC.section = "listcompletestatesite"
+           myVC.statestr = "count(STATE)"
+        
+        
+        navigationController?.pushViewController(myVC, animated: true)
+        
+    }
+    
+    
+    @IBAction func dismantlingaction(_ sender: Any) {
+        
+        
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "totalsites") as! totalsites
+        
+        myVC.section = "listinprogressstatesite"
+          myVC.statestr = "count(STATE)"
+        
+        
+        navigationController?.pushViewController(myVC, animated: true)
+        
+    }
+    
+    @IBAction func remainingaction(_ sender: Any) {
+        
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "totalsites") as! totalsites
+        
+        myVC.section = "listpendingstatesite"
+          myVC.statestr = "count(STATE)"
+        
+        
+        navigationController?.pushViewController(myVC, animated: true)
+        
+    }
 }

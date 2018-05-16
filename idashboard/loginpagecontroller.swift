@@ -62,18 +62,35 @@ class loginpagecontroller: UIViewController {
         let password: String = self.password.text!
         
         FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
-           
+            
+            if(error == nil){
+         
             if(user != nil){
                 
+                self.showToast(message: (user?.email!)!)
                 
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                
-                let initialViewController2 = storyboard.instantiateViewController(withIdentifier: "dashboard") as! dashboardpage
-                
-                self.navigationController?.pushViewController(initialViewController2, animated: true)
-                
+                FIRAuth.auth()?.addStateDidChangeListener { (auth, user) in
+                    
+                    
+                    
+                        
+                        
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        
+                        let initialViewController2 = storyboard.instantiateViewController(withIdentifier: "dashboard") as! dashboardpage
+                        
+                        self.navigationController?.pushViewController(initialViewController2, animated: true)
+                        
+                        
+                    
+                }
                 
             }
+            }else{
+                
+                self.showToast(message: error.debugDescription)
+            }
+           
         }
 
         

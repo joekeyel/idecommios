@@ -32,10 +32,10 @@
 		30864DA220941A1500CB8EEC /* subbplancontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30864DA120941A1500CB8EEC /* subbplancontroller.swift */; };
 		30864DA4209428F200CB8EEC /* subbplancell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30864DA3209428F200CB8EEC /* subbplancell.swift */; };
 		30864DA620942A6B00CB8EEC /* subbplanobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30864DA520942A6B00CB8EEC /* subbplanobject.swift */; };
-		308952442090653500EFD9DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 308952432090653500EFD9DE /* GoogleService-Info.plist */; };
 		308952462090700900EFD9DE /* dashboardpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308952452090700900EFD9DE /* dashboardpage.swift */; };
 		3091E28F20901BCE00147F9F /* ragistrationctrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091E28E20901BCE00147F9F /* ragistrationctrl.swift */; };
 		309B346D208EBFB600B29C9E /* loginpagecontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B346C208EBFB600B29C9E /* loginpagecontroller.swift */; };
+		30AE7B3F20A13E6400AADC3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30AE7B3E20A13E6400AADC3B /* GoogleService-Info.plist */; };
 		30B744742096C6BC0045EC99 /* fiberplancontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B744732096C6BC0045EC99 /* fiberplancontroller.swift */; };
 		30B744762096C7220045EC99 /* fiberplancell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B744752096C7220045EC99 /* fiberplancell.swift */; };
 		30B744782096C7C30045EC99 /* fiberplanobject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B744772096C7C30045EC99 /* fiberplanobject.swift */; };
@@ -49,6 +49,8 @@
 		30CBA81E208DBA750026D45F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CBA81C208DBA750026D45F /* LaunchScreen.storyboard */; };
 		30CBA829208DBA760026D45F /* idashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA828208DBA760026D45F /* idashboardTests.swift */; };
 		30CBA834208DBA760026D45F /* idashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA833208DBA760026D45F /* idashboardUITests.swift */; };
+		30D29EC720ABCEA80005EDE6 /* totalsites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D29EC620ABCEA70005EDE6 /* totalsites.swift */; };
+		30D29EC920ABD2600005EDE6 /* totalsitecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D29EC820ABD2600005EDE6 /* totalsitecell.swift */; };
 		39E8D2237197D3CDBC1E3525 /* Pods_idashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBF00F9C717B8665E8EE447 /* Pods_idashboard.framework */; };
 		B9E0A723A7B25FB9218BA8DD /* Pods_idashboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BB0E0F4F0435833D9E8AB4 /* Pods_idashboardUITests.framework */; };
 /* End PBXBuildFile section */
@@ -96,10 +98,10 @@
 		30864DA120941A1500CB8EEC /* subbplancontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbplancontroller.swift; sourceTree = "<group>"; };
 		30864DA3209428F200CB8EEC /* subbplancell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbplancell.swift; sourceTree = "<group>"; };
 		30864DA520942A6B00CB8EEC /* subbplanobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subbplanobject.swift; sourceTree = "<group>"; };
-		308952432090653500EFD9DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		308952452090700900EFD9DE /* dashboardpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardpage.swift; sourceTree = "<group>"; };
 		3091E28E20901BCE00147F9F /* ragistrationctrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ragistrationctrl.swift; sourceTree = "<group>"; };
 		309B346C208EBFB600B29C9E /* loginpagecontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginpagecontroller.swift; sourceTree = "<group>"; };
+		30AE7B3E20A13E6400AADC3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "idashboard/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30B744732096C6BC0045EC99 /* fiberplancontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiberplancontroller.swift; sourceTree = "<group>"; };
 		30B744752096C7220045EC99 /* fiberplancell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiberplancell.swift; sourceTree = "<group>"; };
 		30B744772096C7C30045EC99 /* fiberplanobject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiberplanobject.swift; sourceTree = "<group>"; };
@@ -119,6 +121,8 @@
 		30CBA82F208DBA760026D45F /* idashboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = idashboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CBA833208DBA760026D45F /* idashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idashboardUITests.swift; sourceTree = "<group>"; };
 		30CBA835208DBA760026D45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D29EC620ABCEA70005EDE6 /* totalsites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = totalsites.swift; sourceTree = "<group>"; };
+		30D29EC820ABD2600005EDE6 /* totalsitecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = totalsitecell.swift; sourceTree = "<group>"; };
 		4EBF00F9C717B8665E8EE447 /* Pods_idashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_idashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E684F52D0655B30F3D20BDB /* Pods-idashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idashboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-idashboard/Pods-idashboard.debug.xcconfig"; sourceTree = "<group>"; };
 		790AFF2B413004CFE730AAA8 /* Pods-idashboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idashboardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-idashboardTests/Pods-idashboardTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 		30CBA807208DBA730026D45F = {
 			isa = PBXGroup;
 			children = (
+				30AE7B3E20A13E6400AADC3B /* GoogleService-Info.plist */,
 				30CBA812208DBA740026D45F /* idashboard */,
 				30CBA827208DBA760026D45F /* idashboardTests */,
 				30CBA832208DBA760026D45F /* idashboardUITests */,
@@ -182,7 +187,6 @@
 		30CBA812208DBA740026D45F /* idashboard */ = {
 			isa = PBXGroup;
 			children = (
-				308952432090653500EFD9DE /* GoogleService-Info.plist */,
 				30CBA813208DBA740026D45F /* AppDelegate.swift */,
 				30CBA815208DBA740026D45F /* ViewController.swift */,
 				30CBA817208DBA740026D45F /* Main.storyboard */,
@@ -222,6 +226,8 @@
 				305E1E2020982DC0005F90C9 /* colobalancecontroller.swift */,
 				305E1E2220982E87005F90C9 /* colobalancecell.swift */,
 				305E1E2420982EA7005F90C9 /* colobalanceobject.swift */,
+				30D29EC620ABCEA70005EDE6 /* totalsites.swift */,
+				30D29EC820ABD2600005EDE6 /* totalsitecell.swift */,
 			);
 			path = idashboard;
 			sourceTree = "<group>";
@@ -381,7 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30CBA81E208DBA750026D45F /* LaunchScreen.storyboard in Resources */,
-				308952442090653500EFD9DE /* GoogleService-Info.plist in Resources */,
+				30AE7B3F20A13E6400AADC3B /* GoogleService-Info.plist in Resources */,
 				30CBA81B208DBA750026D45F /* Assets.xcassets in Resources */,
 				30CBA819208DBA740026D45F /* Main.storyboard in Resources */,
 			);
@@ -563,8 +569,10 @@
 				305E1E112097FF44005F90C9 /* fiberbalancecell.swift in Sources */,
 				30B744782096C7C30045EC99 /* fiberplanobject.swift in Sources */,
 				302E3B662095CF54004B3FD7 /* subbbalancecell.swift in Sources */,
+				30D29EC920ABD2600005EDE6 /* totalsitecell.swift in Sources */,
 				305E1E1520980B30005F90C9 /* coloplancontroller.swift in Sources */,
 				3073D8FD209306F600BDDA8E /* migratedpage.swift in Sources */,
+				30D29EC720ABCEA80005EDE6 /* totalsites.swift in Sources */,
 				30B744742096C6BC0045EC99 /* fiberplancontroller.swift in Sources */,
 				30BD238520954B9500BB74D4 /* subbactualcell.swift in Sources */,
 				305E1E1920980B69005F90C9 /* coloplanobject.swift in Sources */,
@@ -762,7 +770,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = my.com.tm.idashboard;
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.tm.idecomm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -782,7 +790,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = my.com.tm.idashboard;
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.tm.idecomm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
